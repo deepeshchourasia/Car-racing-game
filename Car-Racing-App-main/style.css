@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.back
+{
+   background-image: url(backimg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size:cover;
+   height: 100vh;
+}
+#road{
+    
+    border: 1px solid black;
+    margin: 0rem auto;
+    background-image:url(road.jpg) ;
+    background-size: contain;
+    overflow: hidden;
+    height: 100vh;
+    width: 390px;
+}
+
+#enemycar{
+    width: 50px;
+    height: 80px;
+    /* background-color: black; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    animation: move 1s linear  infinite  ;
+    background-color: #2d3436;
+
+}
+#enemycar img{
+    height: 100px;
+}
+@keyframes move {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 700px;
+    }
+    
+}
+#playercar{
+    height: 100px;
+    width: 130px;
+    /* background-color: red; */
+    position: relative;
+    top: 400px;
+    left: 130px;
+    text-align: center;
+}
+#playercar img{
+    height: 100px;
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    background-color: gray;
+    margin:  1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    display:none ;
+}
+#score{
+    font-size: 2.2rem;
+    color: black;
+}
+#btn{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(176, 144, 144);
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
